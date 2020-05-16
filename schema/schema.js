@@ -13,7 +13,7 @@ const {
 // have a team type be composed of TeamYear types
 
 const url =
-    "mongodb+srv://tyler:bakersfield@cluster0-blxn0.mongodb.net/test?retryWrites=true&w=majority";
+    "MY-CONNECTION-STRING";
 const dbName = "basbeball";
 let db;
 let collection;
