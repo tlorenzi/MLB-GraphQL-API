@@ -10,8 +10,6 @@ const {
     GraphQLInt
 } = graphql;
 
-// have a team type be composed of TeamYear types
-
 const url =
     "MY-CONNECTION-STRING";
 const dbName = "basbeball";
@@ -78,7 +76,7 @@ const RootQuery = new GraphQLObjectType({
                 }).toArray();
             },
         },
-        Year: { // !!!! not working
+        Year: { 
             type: new GraphQLList(TeamYearType),
             args: {
                 year: {
@@ -91,7 +89,7 @@ const RootQuery = new GraphQLObjectType({
                 }).toArray();
             },
         },
-        TeamDataForYear: { //!!!!!   not working
+        TeamDataForYear: { 
             type: TeamYearType,
             args: {
                 year: {
