@@ -125,7 +125,7 @@ const RootQuery = new GraphQLObjectType({
             resolve(parent, args) {
                 return collection.find({
                     BattingAvg: {
-                        $gte: parseFloat(args.avg)
+                        $gte: parseFloat(args.AVG)
                     }
                 }).toArray();
             },
